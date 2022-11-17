@@ -15,9 +15,9 @@
     </script> -->
     <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
     <script>
-        const MYSERVER ="http://127.0.0.1:5000/home"
+        const MYSERVER ="https://flask-json-test.onrender.com/home"
         
-        axios.get(MYSERVER).then((response) => console.log(response))
+        axios.get(MYSERVER).then((response) => console.log(response.data))
         
     </script>
 </body>
