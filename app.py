@@ -4,8 +4,8 @@ from flask_cors import CORS
 app = Flask(__name__)
 CORS(app)
 
-@app.route('/')
-def init():
+@app.route("/", methods=['GET'])
+def home():  
     return render_template('index.html')
 
 @app.route('/home',methods = ['POST', 'GET'])
